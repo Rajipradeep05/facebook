@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:serif;
+}
+.facebook-page{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:white;
+
+}
+.facebook-page .container{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+.container.textbox{
+    display: flex;
+    flex-direction: column;
+}
+.textbox .Logo{
+    font-size: 3.5rem;
+    color: blue;
+}
+.textbox p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom:5rem;
+    max-width: 400px;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    width: 396px;
+    border-radius:8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 /10%), 0 8px 16px rgb(0 0 0 /10%);
+}
+
+form input{
+    border: 1px solid;
+    padding: 8px 16px;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+form input:focus{
+    border: 1.8px solid blue;
+
+}
+form .login{
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: blue;
+    color: white;
+    font-size: 1.1rem;
+}
+form .login:hover{
+    cursor: pointer;
+}
+form a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: blue;
+    padding-top:12px ;
+}
+form hr{
+    background: white;
+    margin: 1rem;
+}
+form .createacount{
+    outline: none;
+    border: none;
+    background: green;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+}
+form .createacount{
+    cursor: pointer;
+}
+
+.login P{
+    font-size: 0.8rem;
+    text-align: center;
+     margin-top: 20px;
+
+}
+
+.login span{
+    font-weight: 500;
+
+}
+@media (max-width:820px) {
+    html{
+        font-size: 75%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .textbox{
+        margin: 0;
+        text-align: center;
+    }
+    form{
+        width: 300px;
+        height: fit-content;
+    }
+    form .login{
+        font-size: 1.5rem;
+    }
+    form a{
+        font-size: 1.5rem;
+    }
+    form .container.textbox{
+        font-size: 1.5rem;
+    }
+    form input{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .login p{
+        font-size: 1rem;
+    }
+
+
+}
